@@ -1,7 +1,7 @@
 select dept_no from departments where dept_name in('Sales', 'Development')
 
 select e.emp_no, e.last_name, e.first_name, d.dept_name
-from employee e
+from employees e
 	left join dept_emp de 
 		on e.emp_no = de.emp_no
 	inner join departments d
